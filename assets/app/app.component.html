@@ -17,22 +17,23 @@
             <hr>
         </div>
       
-          <div class="alert alert-success" role="alert">
+          <div class="alert alert-info" role="alert">
             <h4 class="alert-heading"><b>Info!</b> This is a real time language translation messaging application. You can select a specific channel and talk to people those are online in that group. This application allows you to send messages in different languages. This application main purpose is to connect people from different background and share their insightful thoughts without language-communication barrier.</h4>
             <p></p>
           </div>
+          
         <div class="row">
             <div class="col-sm-5">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" [(ngModel)]="user" class="form-control" id="username"
-                        placeholder="Enter username">
-                    <!-- <small id="userHelp" class="form-text text-muted">Type your username.</small> -->
+                        placeholder="Enter your username here">
+                        <small id="userHelp" class="form-text text-muted">Your username will display on global chat box.</small>                
                 </div>
             </div>
             <div class="col-sm-5">
-                <label for="roomInput">Pick a group</label>
-                <select name="roomInput" id="roomInput" class="form-control" [(ngModel)]="room">
+                <label for="roomInput">Channel</label>
+                <select name="roomInput" id="roomInput" class="form-control" [(ngModel)]="room" placeholder="Pick a channel">
                     <option value="Science">Science</option>
                     <option value="Technology">Technology</option>
                     <option value="Gaming">Gaming</option>
@@ -52,8 +53,9 @@
             
             <div class="col sm-2">
                 <div style="margin-top:19px;" class="pull-right">
-                    <button type="button" class="btn btn-primary" (click)="join()">Join</button>
-                    <button type="button" class="btn btn-default" (click)="leave()">Leave</button>
+                    <button type="button" class="btn btn-primary btn-lg" (click)="join()">Join</button>
+                    <!-- <button type="button" class="btn btn-primary" (click)="join()">Join</button> -->
+                    <button type="button" class="btn btn-secondary btn-lg" (click)="leave()">Leave</button>
 
                 </div>
             </div>
@@ -74,8 +76,8 @@
                 <input type="text" class="form-control" [(ngModel)]="messageText" placeholder="Enter your message here">
             </div>
             <div class="col-sm-10">
-                <label for="langInput">Choose language:</label>
-                <select name="langInput" id="langInput" class="form-control" [(ngModel)]="lang">
+                <label for="langInput">Language</label>
+                <select name="langInput" id="langInput" class="form-control" [(ngModel)]="lang" placeholder="Pick a language">
                     <option value="af">Afrikaans</option>
                     <option value="ar">Arabic</option>
                     <option value="bg">Bulgarian</option>
