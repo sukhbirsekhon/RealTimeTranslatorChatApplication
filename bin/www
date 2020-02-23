@@ -23,7 +23,7 @@ app.set('port', port);
 var server = http.createServer(app);
 
 var io = require('socket.io').listen(server);
-var l;
+
 io.on('connection',(socket)=>{
 
     console.log('new connection made.');
@@ -61,12 +61,300 @@ io.on('connection',(socket)=>{
         translate(data.message, {to: 'en'}).then(res => {
           console.log(res.text);
           console.log(res.from.language.iso);
+          
           io.in(data.room).emit('new message', {user:data.user, message:res.text});
-  
+          
       }).catch(err => {
           console.error(err);
       });
       }
+
+      if(data.lang == 'af')
+      {
+        translate(data.message, {to: 'af'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+      
+      if(data.lang == 'ar')
+      {
+        translate(data.message, {to: 'ar'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'bg')
+      {
+        translate(data.message, {to: 'bg'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'zh-TW')
+      {
+        translate(data.message, {to: 'zh-TW'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'cs')
+      {
+        translate(data.message, {to: 'cs'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'nl')
+      {
+        translate(data.message, {to: 'nl'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'fr')
+      {
+        translate(data.message, {to: 'fr'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'de')
+      {
+        translate(data.message, {to: 'de'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'gu')
+      {
+        translate(data.message, {to: 'gu'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'it')
+      {
+        translate(data.message, {to: 'it'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'ja')
+      {
+        translate(data.message, {to: 'ja'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'ko')
+      {
+        translate(data.message, {to: 'ko'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'la')
+      {
+        translate(data.message, {to: 'la'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'mk')
+      {
+        translate(data.message, {to: 'mk'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'ne')
+      {
+        translate(data.message, {to: 'ne'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'pa')
+      {
+        translate(data.message, {to: 'pa'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'ru')
+      {
+        translate(data.message, {to: 'ru'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'ta')
+      {
+        translate(data.message, {to: 'ta'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'ur')
+      {
+        translate(data.message, {to: 'ur'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'vi')
+      {
+        translate(data.message, {to: 'vi'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'yo')
+      {
+        translate(data.message, {to: 'yo'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
+      if(data.lang == 'zu')
+      {
+        translate(data.message, {to: 'zu'}).then(res => {
+          console.log(res.text);
+          console.log(res.from.language.iso);
+          
+          io.in(data.room).emit('new message', {user:data.user, message:res.text});
+          
+      }).catch(err => {
+          console.error(err);
+      });
+      }
+
       if(data.lang == 'es') 
       {
         translate(data.message, {to: 'es'}).then(res => {

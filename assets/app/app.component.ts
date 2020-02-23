@@ -15,6 +15,7 @@ export class AppComponent {
     lang: String;
     messageText: String;
     translatedText: String;
+    translateLastText1: String;
     messageArray: Array<{ user: String, message: String }> = [];
     constructor(private _chatService: ChatService) {
         this._chatService.newUserJoined()
@@ -45,5 +46,6 @@ export class AppComponent {
         this._chatService.sendMessage({ user: this.user, room: this.room, message: this.messageText, lang: this.lang });    
 
     }
+
 
 }

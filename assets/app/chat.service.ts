@@ -17,6 +17,7 @@ export class ChatService{
     {
         this.socket.emit('lang', data);
     }
+   
     newUserJoined()
     {
         let observable = new Observable<{user:String, message:String}>(observer=>{
