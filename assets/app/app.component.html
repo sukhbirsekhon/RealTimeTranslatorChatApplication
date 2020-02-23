@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .alert {
+          padding: 20px;
+          background-color:#d9edf7;
+          color:#31708f;
+        }
+        
+        .closebtn {
+          margin-left: 15px;
+          color: black;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        .closebtn:hover {
+          color: rgb(16, 221, 16);
+        }
+    </style>
 </head>
 
 <body>
@@ -16,10 +38,10 @@
             <h1>Globe Chat Application</h1>
             <hr>
         </div>
-      
-          <div class="alert alert-info" role="alert">
+
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
             <h4 class="alert-heading"><b>Info!</b> This is a real time language translation messaging application. You can select a specific channel and talk to people those are online in that group. This application allows you to send messages in different languages. This application main purpose is to connect people from different background and share their insightful thoughts without language-communication barrier.</h4>
-            <p></p>
           </div>
           
         <div class="row">
