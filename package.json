@@ -25,7 +25,7 @@
     "cookie-parser": "~1.4.3",
     "core-js": "^2.4.1",
     "debug": "~2.2.0",
-    "express": "~4.14.0",
+    "express": "~4.17.3",
     "google-translate-api": "^2.3.0",
     "hbs": "~3.1.0",
     "morgan": "~1.6.1",
